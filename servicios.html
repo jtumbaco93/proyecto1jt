@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Soporte Técnico JTec</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Soporte JTec <span class="dot">.</span></a>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="index.html#contacto" class="nav-link btn-cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="section top-spacing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Nuestro Catálogo</span>
+                <h2 class="section-title">Soluciones Profesionales</h2>
+                <p class="section-subtitle">Ofrecemos un abanico completo de servicios diseñados para mantener tu tecnología operativa y segura. Explora nuestras especialidades.</p>
+            </div>
+            
+            <!-- CONTENEDOR DINÁMICO: JS inyectará las tarjetas aquí -->
+            <!-- Nota: El ID 'servicios-container' es clave para que el script funcione -->
+            <div id="servicios-container" class="services-grid-large"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE LLAMADA A LA ACCIÓN (CTA) -->
+    <section class="section bg-primary text-white text-center" style="background-color: var(--primary); color: white;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 20px;">¿No encuentras lo que buscas?</h2>
+            <p style="color: #eee; margin-bottom: 30px;">Ofrecemos consultoría personalizada para casos especiales y empresas.</p>
+            <a href="index.html#contacto" class="btn-outline white-border">Contáctanos Ahora</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Soporte Técnico JTec. Desarrollado por Jordy Tumbaco.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

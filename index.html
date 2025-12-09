@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico JTec - Inicio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Soporte JTec <span class="dot">.</span></a>
+            
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Modo Oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="#contacto" class="nav-link btn-cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <span class="badge">Soporte Técnico Especializado</span>
+                <h1>Transformamos Problemas Tecnológicos en Soluciones Reales</h1>
+                <p>En JTec, no solo reparamos equipos; optimizamos tu flujo de trabajo. Con más de 5 años de experiencia, ofrecemos diagnóstico preciso, mantenimiento preventivo y soluciones de red para hogares y empresas modernas. Garantizamos la seguridad de tu información y la rapidez que tu negocio necesita.</p>
+                <div class="hero-btns">
+                    <a href="#contacto" class="btn-primary">Solicitar Diagnóstico</a>
+                    <a href="servicios.html" class="btn-outline">Explorar Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section class="section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2 class="section-title text-left">Compromiso con la Excelencia</h2>
+                <p>Nuestra misión es garantizar la continuidad operativa de nuestros clientes. Entendemos que cada minuto de inactividad cuesta dinero y tranquilidad. Nos diferenciamos por nuestra respuesta rápida y diagnósticos transparentes.</p>
+                <br>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> Técnicos certificados en Hardware y Software.</li>
+                    <li><i class="fas fa-check-circle"></i> Garantía de 3 meses en todas las reparaciones.</li>
+                    <li><i class="fas fa-check-circle"></i> Atención personalizada y seguimiento post-servicio.</li>
+                    <li><i class="fas fa-check-circle"></i> Uso de repuestos originales y herramientas de precisión.</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <!-- Imagen Sobre Nosotros: Asegúrate de tener una imagen en 'images/about.jpg' -->
+                <img src="images/portada.jpg" alt="Portada" onerror="this.src='https://placehold.co/600x400?text=Sobre+Nosotros'">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTADÍSTICAS -->
+    <section class="section bg-alt stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3>+500</h3>
+                <p>Equipos Reparados</p>
+            </div>
+            <div class="stat-item">
+                <h3>+50</h3>
+                <p>Empresas Atendidas</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Garantía de Satisfacción</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2 class="section-title text-left">Contáctanos</h2>
+                <p>¿Listo para mejorar tu infraestructura tecnológica? Déjanos tus datos y un asesor te contactará en menos de 24 horas.</p>
+                <br>
+                <div class="info-box">
+                    <p><strong><i class="fas fa-map-marker-alt"></i> Dirección:</strong> Av. Juan Tanca Marengo km 1.5, Guayaquil</p>
+                    <p><strong><i class="fas fa-envelope"></i> Email:</strong> info@soportejtec.com</p>
+                    <p><strong><i class="fas fa-phone"></i> Teléfono:</strong> +593 982483682</p>
+                </div>
+            </div>
+            
+            <form id="contact-form" class="form-box">
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                    <small class="error-msg"></small>
+                </div>
+                <div class="input-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="ejemplo@correo.com">
+                    <small class="error-msg"></small>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4" placeholder="Describe tu problema..."></textarea>
+                    <small class="error-msg"></small>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Soporte Técnico JTec. Desarrollado por Jordy Tumbaco.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
